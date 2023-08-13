@@ -5,6 +5,29 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 
+.container #current-time {
+    /* background-image:linear-gradient(to top,yellow,whitesmoke,yellow); */
+    background-color: #333333;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:fixed ;
+    top:0;
+    left:0;
+}
+
+#current-time {
+            animation: blinker 5s linear infinite;
+            
+        }
+        @keyframes blinker{
+            50% {
+                opacity: 0;
+            }
+        }
+
 .navbar{
     background-color:silver;
     display: flex;
@@ -397,9 +420,13 @@ ul a:hover{
 
 
 <body>
-
-<div class="navbar" style="background-color: silver ;padding-right:50px; ">
-  <span><a href="#" class="blink">Admission Enquiry</a></span>
+  
+  <div class="container">
+    <h3 id="current-time"></h3>
+  </div>
+  
+  <div class="navbar" style="background-color: silver ;padding-right:50px; ">
+    <span><a href="#" class="blink">Admission Enquiry</a></span>
     <a class="link" href="#">Academic Calander</a>
     <a class="link" href="#"> AICTE Feedback |</a>
     <a class="link" href="#"> ERP |</a>
@@ -716,5 +743,22 @@ ul a:hover{
   <h6 style="color: grey;">Privacy Policy |Terms & Conditions |Disclaimer</h6>
   <h6 style="color:silver">Designed & Developed by Pratham and Irfan</h6>
 </footer>
+
+
+<script>
+    let timeDateElement = document.getElementById("current-time");
+
+    function updateDateTime() {
+    let currentDateTime = new Date();
+    let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+    let formattedDateTime = currentDateTime.toLocaleDateString('en-US', options);
+    timeDateElement.innerHTML = formattedDateTime;
+    }
+
+    setInterval(updateDateTime, 1000);
+  
+</script>
+
+
 </body>
 </html>
