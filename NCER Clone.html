@@ -6,8 +6,7 @@
 <style>
 
 .container #current-time {
-    /* background-image:linear-gradient(to top,yellow,whitesmoke,yellow); */
-    background-color: #333333;
+    background-image:linear-gradient(to bottom right,rgb(0, 183, 255),black,rgb(0, 183, 255));
     color:white;
     display: flex;
     flex-direction: column;
@@ -15,18 +14,24 @@
     justify-content: center;
     position:fixed ;
     top:0;
-    left:0;
+    font-size: 20px;
 }
 
 #current-time {
-            animation: blinker 5s linear infinite;
-            
-        }
-        @keyframes blinker{
-            50% {
-                opacity: 0;
-            }
-        }
+    animation: slideBlink 7s ease-in-out infinite;
+    transform: translateX(-100%);
+}
+
+@keyframes slideBlink {
+    0%, 100% {
+        opacity: 0; /* Start and end with full opacity */
+        transform: translateX(-100%); /*Slide to the left edge */
+    }
+    10% {
+        opacity: 1; /* Halfway through, make it invisible */
+        transform: translateX(100%); /*Slide to the right edge*/
+    }
+}
 
 .navbar{
     background-color:silver;
