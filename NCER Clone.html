@@ -4,7 +4,7 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-
+  
 .container #current-time {
     background-image:linear-gradient(to bottom right,rgb(0, 183, 255),black,rgb(0, 183, 255));
     color:white;
@@ -37,7 +37,7 @@
     background-color:silver;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items:center;
     padding:0px 15px;
     gap:30px;
     font-family: calibre;
@@ -278,19 +278,21 @@ h6{
 .mainlists{
   display: flex;
   flex-direction: row;
-  background-color: #333333;
+  background-color:#eeeAF1;
   justify-content: space-evenly;
 }
 
 .submainlist{
   font-size: 24px;
+  color:#1B547F;
+  padding-top:20px;
 }
 
 ul a{
   display: flex;
   flex-direction: column;
   text-decoration: none;
-  color:skyblue;
+  color:#337ab7;
   font-size: 15px;
 }
 
@@ -302,16 +304,20 @@ ul a:hover{
 
 .maincontact{
   color:whitesmoke;
-  background-color: rgb(66, 66, 197);
+  background-color: #1b547f;
   display: flex;
   flex-direction: row;
   font-family: calibri;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  height:240px;
 } 
 
-.contact1 h4{
+.contact1 h4 , .quicklinks h4 , .locationmap h4 , .coordinator h4{
   font-size: 24px;
+  margin-top:20px;
+  margin-bottom: 10px;
+  color:white;
 }
 
 .sub2contact1{
@@ -373,11 +379,12 @@ ul a:hover{
   justify-content: space-around;
   background-color: antiquewhite;
   padding: 1%;
+  flex-wrap: wrap;
 }
 
 .facilities img{
-  height:150px;
-  width:150px;
+  height:80px;
+  width:80px;
 }
 
 .facilities a{
@@ -402,9 +409,10 @@ ul a:hover{
 
 .mainextraactivities{
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
+  gap:30px;
   align-items: center;
-  padding: 2%;
+  padding: 1%;
   background-color: #fff;
   flex-wrap: wrap;
 }
@@ -440,10 +448,10 @@ ul a:hover{
 
 <div class="main" style="background-color:#fff ;padding:10 ;">
 
-    <img src="ncer logo.png" alt="Logo" height="200vh" width="200vw" style="float:left" title="NCER Logo">
+    <img src="ncer-logo.png" alt="Logo" height="200vh" width="200vw" style="float:left" title="NCER Logo">
     <img src="trust-logo.png"  alt="Logo" height="200vh" width="200vw" style="float:right" title="NMVPM Logo">
 
-    <div class="text">
+    <div class="text" align="center">
         <h4>NUTAN MAHARASHTRA VIDYA PRASARAK MANDAL'S<br></h4>
         <h1>NUTAN COLLEGE OF ENGINEERING & RESEARCH (NCER)<br></h1>
         <h4>Under administrative support of Pimpri Chinchwad Education Trust (PCET)<br></h4>
@@ -584,7 +592,7 @@ ul a:hover{
   </div>
 </div>
 
-<img src="ncer-slider-01.jpg" alt="Slide Image" style="height: auto;width:100vw" >
+<img src="ncer-slider.jpg" alt="Slide Image" style="height: auto;width:100vw" >
 
 <hr width="auto" size="5" color="red">
 
@@ -610,6 +618,7 @@ ul a:hover{
         <img class="pic" src="latest-events-ncer-3.jpg" alt="event pic" title="News & Events">
         <p>Lorem.</p>
       </div>
+    
 
   <div class="content">
       <h1>Why NCER</h1>
@@ -627,41 +636,41 @@ ul a:hover{
   <div class="mainextraactivities">
     <div class="submainactivities">
       <h4>Student Testimonials</h4>
-      <a href="#"><img src="student testimonial.png" alt="testimonial" title="Student Testimonials"></a>
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/oRbI1iX_rMY?si=YieYfu1FNqac74QH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="submainactivities">
       <h4>Designing Future with Excellence | NCER Campus</h4>
-      <a href="#"><img src="nceryt.png" alt="ncer" title="NCER YT Channel"></a>
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kg76GzpeR7s?si=6wKyHzKl40MglUO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <div class="submainactivities">
       <h4>Gallary</h4>
-      <a href="#"><img src="induction program.png" alt="induction program" title="Induction Program"></a>
+      <a href="#"><img src="ncer-gallery.jpg" alt="induction program" title="Induction Program" style="width:262px;height:100%"></a>
     </div>
   </div>
 
 <div class="facilities">
   <div class="subfacilities">
-    <img src="hostel illustration.jpg" alt="hostelpic" title="Hostel">
+    <img src="hostel_icon.png" alt="hostelpic" title="Hostel">
     <a href="#">Hostel</a>
   </div>
   <div class="subfacilities">
-    <img src="transport.jpg" alt="transportpic" title="Transport">
+    <img src="transportation_icon.png" alt="transportpic" title="Transport">
     <a href="#">Transport</sub></a>
   </div>
   <div class="subfacilities">
-    <img src="gym illustration.jpg" alt="gympic" title="GYM">
+    <img src="gymnasium_icon.png" alt="gympic" title="GYM">
     <a href="#">GYM</sub></a>
   </div>
   <div class="subfacilities">
-    <img src="awards illustration.webp" alt="awardspic" title="Awards">
+    <img src="awards_icon.png" alt="awardspic" title="Awards">
     <a href="#">Awards</sub></a>
   </div>
   <div class="subfacilities">
-    <img src="call illustration.jpg" alt="callpic" title="Call">
+    <img src="call_icon.webp" alt="callpic" title="Call">
     <a href="100">Call</sub></a>
   </div>
   <div class="subfacilities">
-    <img src="email  illustration.jpg" alt="emailpic" title="E-mail">
+    <img src="email_icon.webp" alt="emailpic" title="E-mail">
     <a href="mailto:11sciirfans@gmail.com">E-mail</sub></a>
   </div>
 </div>
@@ -691,7 +700,7 @@ ul a:hover{
     </ul>
   </div>
   <div class="locationmap" title="View Map"><h4>Location</h4>
-    <a href="#"><img class="locationimg" src="NCER Map.png"></a>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7556.990628757551!2d73.6614297!3d18.7314!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b1e539a71065%3A0x83d960dd531618e8!2sNutan%20College%20Of%20Engineering%20And%20Research%20(NCER)!5e0!3m2!1sen!2sin!4v1601296618044!5m2!1sen!2sin" width="200" height="150" frameborder="0" style="border-radius:10px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
   </div>
   <div class="coordinator">
     <h4>Admission Coordinator:</h4>
