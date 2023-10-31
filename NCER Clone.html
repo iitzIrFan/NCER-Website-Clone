@@ -3,6 +3,7 @@
 <head><title>NCER Clone</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="ncer favicon.png">
 <style>
   
 .container #current-time {
@@ -28,7 +29,7 @@
         transform: translateX(-100%); /*Slide to the left edge */
     }
     10% {
-        opacity: 1; /* Halfway through, make it invisible */
+        opacity: 1;
         transform: translateX(100%); /*Slide to the right edge*/
     }
 }
@@ -424,6 +425,15 @@ ul a:hover{
   align-items: center;
 }
 
+/* body {
+  margin: 10%;
+} */
+
+.video{
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
 
 
 
@@ -468,6 +478,9 @@ ul a:hover{
   <a href="#" class="fa fa-instagram"></a>
   <a href="#" class="fa fa-youtube"></a>
   </span>
+
+                     <!-- NAVBAR -->
+    <!-- ------------------------------------------ -->
 
 <div class="slip">
     <div class="subnav">
@@ -592,7 +605,12 @@ ul a:hover{
   </div>
 </div>
 
-<img src="ncer-slider.jpg" alt="Slide Image" style="height: auto;width:100vw" >
+<!-- <img src="ncer-slider.jpg" alt="Slide Image" style="height: auto;width:100vw" > -->
+<div id="video">
+  <video width="100%" loop="true" autoplay="autoplay" muted>
+    <source src="https://www.ncerpune.in/ncer-website-introductory-cover-video.mp4" type="video/mp4">
+  </video>
+</div>
 
 <hr width="auto" size="5" color="red">
 
