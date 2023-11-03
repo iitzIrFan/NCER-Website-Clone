@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>  
 <html>
 <head><title>NCER Clone</title>
@@ -794,3 +795,801 @@ ul a:hover{
 
 </body>
 </html>
+=======
+<!DOCTYPE html>  
+<html>
+<head><title>NCER Clone</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="ncer favicon.png">
+<style>
+  
+.container #current-time {
+    background-image:linear-gradient(to bottom right,rgb(0, 183, 255),black,rgb(0, 183, 255));
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:fixed ;
+    top:0;
+    font-size: 20px;
+}
+
+#current-time {
+    animation: slideBlink 7s ease-in-out infinite;
+    transform: translateX(-100%);
+}
+
+@keyframes slideBlink {
+    0%, 100% {
+        opacity: 0; /* Start and end with full opacity */
+        transform: translateX(-100%); /*Slide to the left edge */
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(100%); /*Slide to the right edge*/
+    }
+}
+
+.navbar{
+    background-color:silver;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    padding:0px 15px;
+    gap:30px;
+    font-family: calibre;
+}
+
+.navbar a{
+    display: flex;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+
+.navbar a:hover{
+    color:red;
+}
+
+h1{
+    font-size:25px;
+    display: flex;
+    justify-content:center;
+    align-items:center ;
+    color:red;
+}
+
+h4{
+    color:rgb(0, 0, 0);
+    font-size:18px;
+    display: flex;
+    justify-content:center;
+    align-items:center ;
+}
+
+h5{
+    color:rgb(0, 0, 0);
+    font-size:14px;
+    display: flex;
+    justify-content:center;
+    align-items:center ;
+}
+
+h6{
+    color:rgb(0, 0, 0);
+    font-size:12px;
+    display: flex;
+    justify-content:center;
+    align-items:center ;
+}
+
+.slip{
+    overflow: hidden;
+    background-color:skyblue; 
+    padding-left: 70px;
+    overflow: hidden;
+}
+
+.slip a{
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 20px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 14px;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.slip a:hover, .subnav:hover .subnavbtn {
+  background-color:rgb(0, 183, 255);
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color:skyblue;
+  width: 100%;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color:1b547f;
+  color: white;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+  display: flex;
+  justify-content:center;
+  align-items:center ;
+}
+
+.images .pic{
+  height: 200px;
+  width: 200px;
+}
+
+.content{
+  height: 20vh;
+  width:50vw;
+  float: right;
+}
+
+.footer {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content:space-between;
+        padding: 10px 0px;
+    } 
+
+.social{
+  display:flex;
+  gap:5px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position:fixed;
+  right:0;  /* property helps to place right by taking zero distance from that direction*/
+  filter:drop-shadow(10px 10px 10px black);
+  z-index: 10;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 20px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-facebook {
+  background: #566bf8;
+  color: white;
+}
+
+.fa-twitter {
+  background: #7cbef0;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #032e93c0;
+  color: white;
+}
+
+.fa-youtube {
+  background: #fc3a3a;
+  color: white;
+}
+
+.fa-instagram {
+  background: rgb(255, 2, 2);
+  color: white;
+}
+
+.fa-facebook
+ {
+  transition: transform 0.5s;
+}
+
+.fa-facebook:hover {
+  transform: rotate(360deg);
+}
+
+.fa-linkedin{
+  transition: transform 0.5s;
+}
+
+.fa-linkedin:hover {
+  transform: rotate(360deg);
+}
+
+.fa-twitter {
+  transition: transform 0.5s;
+}
+
+.fa-twitter:hover {
+  transform: rotate(360deg);
+}
+
+.fa-instagram {
+  transition: transform 0.5s;
+}
+
+.fa-instagram:hover {
+  transform: rotate(360deg);
+}
+
+.fa-youtube {
+  transition: transform 0.5s;
+}
+
+.fa-youtube:hover {
+  transform: rotate(360deg);
+}
+
+.admissions{
+  background-color: skyblue;
+  padding:10px;
+}
+
+.blink {
+            animation: blinker 1.5s linear infinite;
+            background-color: #566bf8;
+            padding:5px 10px;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+
+.mainlists{
+  display: flex;
+  flex-direction: row;
+  background-color:#eeeAF1;
+  justify-content: space-evenly;
+}
+
+.submainlist{
+  font-size: 24px;
+  color:#1B547F;
+  padding-top:20px;
+}
+
+ul a{
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color:#337ab7;
+  font-size: 15px;
+}
+
+ul a:hover{
+  text-decoration: underline;
+  color:rgb(0, 0, 0);
+  
+}
+
+.maincontact{
+  color:whitesmoke;
+  background-color: #1b547f;
+  display: flex;
+  flex-direction: row;
+  font-family: calibri;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  height:240px;
+} 
+
+.contact1 h4 , .quicklinks h4 , .locationmap h4 , .coordinator h4{
+  font-size: 24px;
+  margin-top:20px;
+  margin-bottom: 10px;
+  color:white;
+}
+
+.sub2contact1{
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.sub2contact1 a{
+  text-decoration: none;
+  color:#fff;
+}
+
+.sub1contact1{
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+.quicklinks a{
+  text-decoration: none;
+  color:whitesmoke;
+  font-size: 15px;
+}
+
+.subquicklinks{
+  font-size: 15px;
+}
+
+.quicklinks a:hover{
+  text-decoration: underline;
+  color:white;
+}
+
+.locationimg{
+  height: 170px;
+  width: 170px;
+  border-radius: 15%;
+  padding:5%; 
+} 
+
+.locationimg h4{
+  font-size: 24px;
+}
+
+.coordinator h4{
+  font-size: 24px;
+}
+
+.coordinator article a{
+  font-size: 15px;
+  text-decoration: none;
+  color:#fff;
+}
+
+.facilities{
+  display: flex;
+  justify-content: space-around;
+  background-color: antiquewhite;
+  padding: 1%;
+  flex-wrap: wrap;
+}
+
+.facilities img{
+  height:80px;
+  width:80px;
+}
+
+.facilities a{
+  text-decoration: none;
+  font-size: 14px;
+  font-family: calibri;
+  display: flex;
+  justify-content: center;
+  padding:1%;
+  color:rgb(20, 172, 232);
+}
+
+.facilities a:hover{
+  text-decoration: underline;
+  color:rgb(0, 0, 0);
+}
+
+.subfacilities{
+  padding:1%;
+  background-color: #fff;
+}
+
+.mainextraactivities{
+  display: flex;
+  justify-content:center;
+  gap:30px;
+  align-items: center;
+  padding: 1%;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.submainactivities h4{
+  font-size: 25px;
+  color:rgb(22, 22, 162);
+  justify-content: center;
+  align-items: center;
+}
+
+/* body {
+  margin: 10%;
+} */
+
+.video{
+  object-fit: contain;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+
+
+</style>
+
+</head>
+
+
+<body>
+  
+  <div class="container">
+    <h3 id="current-time"></h3>
+  </div>
+  
+  <div class="navbar" style="background-color: silver ;padding-right:50px; ">
+    <span><a href="#" class="blink">Admission Enquiry</a></span>
+    <a class="link" href="#">Academic Calander |</a>
+    <a class="link" href="#"> AICTE Feedback |</a>
+    <a class="link" href="#"> ERP |</a>
+    <a class="link" href="#"> Media |</a>
+</div>
+
+<div class="main" style="background-color:#fff ;padding:10 ;">
+
+     <a href="ncer-logo.png"  download><img src="ncer-logo.png" alt="Logo" height="200vh" width="200vw" style="float:left" title="NCER Logo"></a>
+    <a href="trust-logo.png"  download><img src="trust-logo.png"  alt="Logo" height="200vh" width="200vw" style="float:right" title="NMVPM Logo" ></a>
+
+    <div class="text" align="center">
+        <h4>NUTAN MAHARASHTRA VIDYA PRASARAK MANDAL'S<br></h4>
+        <h1>NUTAN COLLEGE OF ENGINEERING & RESEARCH (NCER)<br></h1>
+        <h4>Under administrative support of Pimpri Chinchwad Education Trust (PCET)<br></h4>
+        <h6>AICTE Approved | Permanently Affiliated to (DBATU ID-6419), Lonere | Approved by Govt. of Maharashtra</h6>
+        <h5>ISO 21001:2018 Certified</h5>
+    </div>
+
+</div>
+
+<span class="social">
+  <a href="#" class="fa fa-facebook"></a>
+  <a href="#" class="fa fa-linkedin"></a>
+  <a href="#" class="fa fa-twitter"></a>
+  <a href="#" class="fa fa-instagram"></a>
+  <a href="#" class="fa fa-youtube"></a>
+  </span>
+
+                     <!-- NAVBAR -->
+    <!-- ------------------------------------------ -->
+
+<div class="slip">
+    <div class="subnav">
+        <button class="subnavbtn"  >Home</button>
+    </div> 
+
+    <div class="subnav">
+        <button class="subnavbtn" >About Us</button>
+        <div class="subnav-content">
+          <a href="#about trust ">About Trust</a>
+          <a href="#about trust">About NCER</a>
+          <a href="#about staff">About Staff</a>
+          <a href="#executive committee">Executive Committee</a>
+          <a href="#quality staff">Quality Staff</a>
+          <a href="#vision and mission">Vision & Mission </a>
+        </div>
+    </div> 
+
+    <div class="subnav">
+        <button class="subnavbtn">Academics</i></button>
+        <div class="subnav-content">
+          <a href="#dean table">Dean Table</a>
+          <a href="#first year engineering">First Year Engineering</a>
+          <a href="#CSE">Computer Science & Engineering</a>
+          <a href="#CSE[AI]">Computer Science & Engineering[AI]</a>
+          <a href="#ECE">E & C Engineering</a>
+          <a href="#MEC">Mechanical Engineering</a>
+          <a href="#automobile engineering">Automobile Engineering</a>
+          <a href="#BVOC">B.Voc Courses</a>
+        </div>
+    </div> 
+
+   <div class="subnav">
+        <button class="subnavbtn">Admissions</i></button>
+        <div class="subnav-content">
+          <a href="#information">Information Brochure</a>
+          <a href="#ncer">NCER Brochure</a>
+          <a href="#ncer leaflet">NCER leaflet</a>
+          <a href="#bvoc leaflet">B.Voc Courses leaflet</a>
+          <a href="#rules">Admission Rules</a>
+          <a href="#offered courses">Courses Offered</a>
+          <a href="#fees">Fees Structure</a>
+          <a href="#seats left">Vacant Seats</a>
+        </div>
+    </div>
+    
+    <div class="subnav">
+      <button class="subnavbtn">IIIC</button>
+      <div class="subnav-content">
+        <a href="#IIIC desk">IIIC Coordination Desk</a>
+        <a href="#mous draft">MOUS Draft</a>
+        <a href="#MOUS">MOUS</a>
+        <a href="#IIIC interns">IIIC Internships & Training</a>
+        <a href="#projects">Industry Projects</a>
+        <a href="#guest">Guest Sessions/webinars</a>
+        <a href="#visits">Industery Visits</a>
+        <a href="#enterpreneur">Enterepreneur Development/Startup</a>
+      </div>
+    </div>    
+
+    <div class="subnav">
+      <button class="subnavbtn">Life In Campus</button>
+      <div class="subnav-content">
+        <a href="#transport">Transport</a>
+        <a href="#hotel">Hostel</a>
+        <a href="#books">Library</a>
+        <a href="#gym">Gymkhana</a>
+        <a href="#spors">Sports</a>
+      </div>
+    </div> 
+
+    <div class="subnav">
+      <button class="subnavbtn">Placements</button>
+      <div class="subnav-content">
+        <a href="#pcets">PCETS Trainig & Placement Cell</a>
+        <a href="#topos">From TPOS Table</a>
+        <a href="#recruiters">Our Recruiters</a>
+        <a href="#on campus">Campus Placement Drives</a>
+        <a href="#requirements">Industry Requirement Form</a>
+        <a href="#section">Training Section</a>
+      </div>
+    </div>
+    
+    <div class="subnav">
+      <button class="subnavbtn">Students Welfare</button>
+      <div class="subnav-content">
+        <a href="#us">About us</a>
+        <a href="#dean students desk">Dean Students Desks</a>
+        <a href="#sports desk">Sports Cell</a>
+        <a href="#arts & culture">Arts & Culture</a>
+        <a href="#NSS">NSS</a>
+        <a href="#events">Events</a>
+      </div>
+    </div>
+    
+    <div class="subnav">
+      <button class="subnavbtn">Research</button>
+      <div class="subnav-content">
+        <a href="#research desk">From Research Coordinators Desk</a>
+        <a href="#IIC">IIC</a>
+        <a href="#ICCIP">ICCIP</a>
+        <a href="#patents">Patents</a>
+      </div>
+    </div>
+    
+    <div class="subnav">
+      <button class="subnavbtn">NISP</button>
+      <div class="subnav-content">
+        <a href="#NISP">NISP-Committee</a>
+        <a href="#NISP">NISP-Notifications</a>
+        <a href="#NISP">NISP-Policy Manual</a>
+        <a href="#NISP">NISP-Minute Of Meeting</a>
+      </div>
+    </div> 
+
+    <div class="subnav">
+      <button class="subnavbtn" type="button">Awards</button>
+    </div> 
+
+    <div class="subnav">
+      <button class="subnavbtn" type="button">Contact Us</button>
+  </div>
+</div>
+
+<!-- <img src="ncer-slider.jpg" alt="Slide Image" style="height: auto;width:100vw" > -->
+<div id="video">
+  <video width="100%" loop="true" autoplay="autoplay" muted>
+    <source src="https://www.ncerpune.in/ncer-website-introductory-cover-video.mp4" type="video/mp4">
+  </video>
+</div>
+
+<hr width="auto" size="5" color="red">
+
+<div style="display: flex;background-color :#1b547f">
+    <p><h1 style="color:white ; padding-left: 50px;">SPOTLIGHT: </h1><marquee style="padding-top: 15px;" behavior="scroll" direction="left" onmouseover="this.stop();" onmouseout="this.start();"><a href="#instruct" style=" font-size: medium ;text-decoration: none ;color: yellow;">Instruction to the candidates Regarding submission of CVC/NCL/EWS Certificate under Technical Education courses.</a> </marquee>
+    </p>
+</div>
+
+<hr width="auto" size="5" color="red">
+
+
+<div class="photos">
+  <div class="images" style="display: flex; gap: 10px;">
+      <div style="box-shadow: 10px 10px 5px lightblue;"> 
+        <img class="pic" src="latest-events-ncer-1.jpg" alt="event pic" title="News & Events">
+        <p>Lorem.</p>
+      </div>
+      <div style="box-shadow: 10px 10px 5px lightblue;">
+        <img class="pic" src="latest-events-ncer-2.jpg" alt="event pic" title="News & Events">
+        <p>Lorem.</p>
+      </div>
+      <div style="box-shadow: 10px 10px 5px lightblue;">
+        <img class="pic" src="latest-events-ncer-3.jpg" alt="event pic" title="News & Events">
+        <p>Lorem.</p>
+      </div>
+    
+
+  <div class="content">
+      <h1>Why NCER</h1>
+
+      <ul>
+        <li>Skill Based Top Engineering College with industry immersive course structure where students spend more than 11 months at company location for enhanced skill based hands on learning.</li>
+        <li>1 month induction program to enhance soft skills and laying a strong foundation for the engineering journey ahead with practical tips from industry experts.</li>
+        <li>Strategic campus location amidst the Industrial hub of Talegaon along with 150+ MOUs with companiese.</li>
+        <li>Common Placement Assistance Cell with Pimpri Chinchwad Education Trust Group.</li>
+        <li>Excellent Infrastructure and Best Faculty to guide the students into career long success.</li>
+      </ul>
+  </div>
+</div>
+
+  <div class="mainextraactivities">
+    <div class="submainactivities">
+      <h4>Student Testimonials</h4>
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/oRbI1iX_rMY?si=YieYfu1FNqac74QH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="submainactivities">
+      <h4>Designing Future with Excellence | NCER Campus</h4>
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kg76GzpeR7s?si=6wKyHzKl40MglUO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="submainactivities">
+      <h4>Gallary</h4>
+      <a href="#"><img src="ncer-gallery.jpg" alt="induction program" title="Induction Program" style="width:262px;height:100%"></a>
+    </div>
+  </div>
+
+<div class="facilities">
+  <div class="subfacilities">
+    <img src="hostel_icon.png" alt="hostelpic" title="Hostel">
+    <a href="#">Hostel</a>
+  </div>
+  <div class="subfacilities">
+    <img src="transportation_icon.png" alt="transportpic" title="Transport">
+    <a href="#">Transport</sub></a>
+  </div>
+  <div class="subfacilities">
+    <img src="gymnasium_icon.png" alt="gympic" title="GYM">
+    <a href="#">GYM</sub></a>
+  </div>
+  <div class="subfacilities">
+    <img src="awards_icon.png" alt="awardspic" title="Awards">
+    <a href="#">Awards</sub></a>
+  </div>
+  <div class="subfacilities">
+    <img src="call_icon.webp" alt="callpic" title="Call">
+    <a href="100">Call</sub></a>
+  </div>
+  <div class="subfacilities">
+    <img src="email_icon.webp" alt="emailpic" title="E-mail">
+    <a href="mailto:11sciirfans@gmail.com">E-mail</sub></a>
+  </div>
+</div>
+
+<div class="maincontact">
+  <div class="contact1">
+    <h4>Contact Us</h4>
+    <span class="sub1contact1">
+      NUTAN COLLEGE OF ENGINEERING & RESEARCH
+    </span>
+    <span class="sub2contact1">
+      Vishnupuri, Talegaon Dabhade<br>
+      Tal - Maval, Dist - PUNE<br>
+      Pin Code-410507<br>
+      Office Phone :<a href="02114-228175">02114-228175</a>
+      Email : <a href="mailto:11sciirfans@gmail.com">contact@ncerpune.in</a>
+    </span>
+  </div>
+  <div class="quicklinks"><h4>Quick Links</h4>
+    <ul class="subquicklinks">
+      <li><a href="#">Awards</a></li>
+      <li><a href="#">PCET</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Placement</a></li>
+      <li><a href="#">Admission</a></li>
+      <li><a href="#">Transportation</a></li>
+    </ul>
+  </div>
+  <div class="locationmap" title="View Map"><h4>Location</h4>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7556.990628757551!2d73.6614297!3d18.7314!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b1e539a71065%3A0x83d960dd531618e8!2sNutan%20College%20Of%20Engineering%20And%20Research%20(NCER)!5e0!3m2!1sen!2sin!4v1601296618044!5m2!1sen!2sin" width="200" height="150" frameborder="0" style="border-radius:10px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+  <div class="coordinator">
+    <h4>Admission Coordinator:</h4>
+    <article>First year (FE) -<br>
+    Mobile : <a href="7424060708">7424060708</a>, <a href="9371070809">9371070809</a><br>
+    Direct Second Year (DSE) -<br>
+    Mobile : <a href="8830992988">8830992988</a><br>
+    BVoc -<br>
+    Mobile : 9518386161<br>
+    Payment Links<br>
+    </article>
+  </div>
+</div>
+
+<hr style="height:5px;background-image: linear-gradient(to right,skyblue,red,yellow);">
+
+<div class="mainlists">
+  <span class="submainlist">Important Links:-</span>
+  <div class="list">
+    <ul>
+      <li><a href="#">Academic Calendar</a></li>
+      <li><a href="#">AICTE Feedback</a></li>
+      <li><a href="#">IEEE Portal</a></li>
+      <li><a href="#">Mandatory Disclosure</a></li>
+      <li><a href="#">NPTEL Portal</a></li>
+      <li><a href="#">BATU Portal</a></li>
+      <li><a href="#">Affiliation Portal</a></li>
+    </ul>
+  </div>
+  <div class="list">
+    <ul>
+      <li><a href="#">Board of Governors (BOG)</a></li>
+      <li><a href="#">College Development Committee</a></li>
+      <li><a href="#">Committee For SC & ST</a></li>
+      <li><a href="#">Online Grievance Redressal Mechanism</a></li>
+      <li><a href="#">Anti-Ragging Squad</a></li>
+      <li><a href="#">ISO CERTIFICATE</a></li>
+    </ul>
+  </div>
+  <div class="list">
+    <ul>
+      <li><a href="#">Anti Ragging Committee</a></li>
+      <li><a href="#">Internal Complaint Committee (ICC)</a></li>
+      <li><a href="#">Internal Quality Assurance Cell</a></li>
+      <li><a href="#">Staff Grievance Redressal Committee (SGRC)</a></li>
+      <li><a href="#">Women Development Cell</a></li>
+      <li><a href="#">Constitution of Comt. for SC ST Cell</a></li>
+      </ul>
+  </div>
+</div>
+
+<footer style="background-color: black; color: white;display: flex; gap: 300px;padding-left:50px;padding-right:50px; ">
+  <h6 style="color:silver">Copyright @ 2023 Nutan College of Engineering & Research</h6>
+  <h6 style="color: grey;">Privacy Policy |Terms & Conditions |Disclaimer</h6>
+  <h6 style="color:silver">Designed & Developed by Irfan</h6>
+</footer>
+
+
+
+<script>
+    let timeDateElement = document.getElementById("current-time");
+
+    function updateDateTime() {
+    let currentDateTime = new Date();
+    let options = {  year: 'numeric',weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+    let formattedDateTime = currentDateTime.toLocaleDateString('en-US', options);
+    timeDateElement.innerHTML = formattedDateTime;
+    }
+
+    setInterval(updateDateTime, 1000);
+</script>
+
+
+</body>
+</html>
+>>>>>>> 2c69439cb2e3b289fb7186d04dbfd854ee40fe01
