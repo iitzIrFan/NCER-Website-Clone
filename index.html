@@ -425,17 +425,34 @@ ul a:hover{
   align-items: center;
 }
 
-/* body {
-  margin: 10%;
-} */
-
 .video{
   object-fit: contain;
   overflow-clip-margin: content-box;
   overflow: clip;
 }
 
+.midimg{
+  box-shadow: 10px 10px 5px lightblue;
+  padding:1%;
+  filter:drop-shadow(10px 10px 10px black);
+}
 
+.midimg article{
+  padding: 5%;
+}
+
+.midimg:hover{
+  transform: scale(0.90);
+}
+
+.submainactivities{
+  padding:1%;
+  filter:drop-shadow(10px 10px 10px black);
+}
+
+.submainactivities:hover{
+  transform: scale(0.95);
+}
 
 </style>
 
@@ -623,18 +640,18 @@ ul a:hover{
 
 
 <div class="photos">
-  <div class="images" style="display: flex; gap: 10px;">
-      <div style="box-shadow: 10px 10px 5px lightblue;"> 
+  <div class="images" style="display: flex; gap: 15px;">
+      <div class="midimg"> 
         <img class="pic" src="latest-events-ncer-1.jpg" alt="event pic" title="News & Events">
-        <p>Lorem.</p>
+        <article>Lorem.</article>
       </div>
-      <div style="box-shadow: 10px 10px 5px lightblue;">
+      <div class="midimg">
         <img class="pic" src="latest-events-ncer-2.jpg" alt="event pic" title="News & Events">
-        <p>Lorem.</p>
+        <article>Lorem.</article>
       </div>
-      <div style="box-shadow: 10px 10px 5px lightblue;">
+      <div class="midimg">
         <img class="pic" src="latest-events-ncer-3.jpg" alt="event pic" title="News & Events">
-        <p>Lorem.</p>
+        <article>Lorem.</article>
       </div>
     
 
