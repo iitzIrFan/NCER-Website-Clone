@@ -153,6 +153,10 @@ h6{
   width: 200px;
 }
 
+.photos{
+  display: flex;
+}
+
 .content{
   height: 20vh;
   width:50vw;
@@ -165,7 +169,7 @@ h6{
         display: flex;
         justify-content:space-between;
         padding: 10px 0px;
-    } 
+    }
 
 .social{
   display:flex;
@@ -321,6 +325,14 @@ ul a:hover{
   color:white;
 }
 
+.locationmap{
+  filter:drop-shadow(10px 10px 10px black);
+}
+
+.locationmap:hover{
+  transform: scale(0.9);
+}
+
 .sub2contact1{
   display: flex;
   flex-direction: column;
@@ -358,8 +370,8 @@ ul a:hover{
   height: 170px;
   width: 170px;
   border-radius: 15%;
-  padding:5%; 
-} 
+  padding:5%;
+}
 
 .locationimg h4{
   font-size: 24px;
@@ -406,6 +418,13 @@ ul a:hover{
 .subfacilities{
   padding:1%;
   background-color: #fff;
+  border-radius: 30px;
+}
+
+.subfacilities:hover{
+  background-image: linear-gradient(to right bottom,violet,indigo,blue,green,yellow,orange,red);
+  filter:drop-shadow(10px 10px 10px black);
+  transform: scale(0.85);
 }
 
 .mainextraactivities{
@@ -435,6 +454,11 @@ ul a:hover{
   box-shadow: 10px 10px 5px lightblue;
   padding:1%;
   filter:drop-shadow(10px 10px 10px black);
+  border-radius: 50px;
+}
+
+.midimg img{
+  border-radius: 15px;
 }
 
 .midimg article{
@@ -657,7 +681,6 @@ ul a:hover{
 
   <div class="content">
       <h1>Why NCER</h1>
-
       <ul>
         <li>Skill Based Top Engineering College with industry immersive course structure where students spend more than 11 months at company location for enhanced skill based hands on learning.</li>
         <li>1 month induction program to enhance soft skills and laying a strong foundation for the engineering journey ahead with practical tips from industry experts.</li>
@@ -665,7 +688,8 @@ ul a:hover{
         <li>Common Placement Assistance Cell with Pimpri Chinchwad Education Trust Group.</li>
         <li>Excellent Infrastructure and Best Faculty to guide the students into career long success.</li>
       </ul>
-  </div>
+    </div>
+</div>
 </div>
 
   <div class="mainextraactivities">
