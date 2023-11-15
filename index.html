@@ -22,6 +22,10 @@
 
 <style>
 
+body{
+  cursor: url('sword.png'), auto;
+}
+
 .container #current-time {
     background-image:linear-gradient(to bottom right,rgb(0, 183, 255),black,rgb(0, 183, 255));
     color:white;
@@ -174,6 +178,11 @@ h6{
   display: flex;
 }
 
+
+.content h1{
+  padding-top: 5%;
+}
+
 .content li{
   /* height: 20vh;
   width:40vw; */
@@ -182,6 +191,14 @@ h6{
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.content ul{
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  padding-top: 3%;
 }
 
 .footer {
@@ -473,9 +490,8 @@ ul a:hover{
 }
 
 .midimg{
-  box-shadow: 10px 10px 5px lightblue;
-  /* padding:1%; */
-  filter:drop-shadow(10px 10px 10px black);
+  box-shadow: 0px 0px 30px lightblue;
+  filter:drop-shadow(0px 0px 10px black);
   border-radius: 50px;
 }
 
@@ -485,7 +501,7 @@ ul a:hover{
   padding-top: 50px;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-content: center;  
 }
 
 .midimg article{
@@ -497,6 +513,7 @@ ul a:hover{
 
 .midimg:hover{
   transform: scale(0.90);
+  box-shadow:0px 0px 20px green ;
 }
 
 .submainactivities{
@@ -529,14 +546,15 @@ ul a:hover{
 
 <div class="main" style="background-color:#fff ;padding:10 ;">
 
-     <a href="ncer-logo.png"  download><img src="ncer-logo.png" alt="Logo" height="200vh" width="200vw" style="float:left" title="NCER Logo"></a>
-    <a href="trust-logo.png"  download><img src="trust-logo.png"  alt="Logo" height="200vh" width="200vw" style="float:right" title="NMVPM Logo" ></a>
+     <a href="ncer-logo.png" ><img src="ncer-logo.png" alt="Logo" height="200vh" width="200vw" style="float:left" title="NCER Logo"></a>
+    <a href="trust-logo.png" ><img src="trust-logo.png"  alt="Logo" height="200vh" width="200vw" style="float:right" title="NMVPM Logo"></a>
 
     <div class="text" align="center">
         <h4>NUTAN MAHARASHTRA VIDYA PRASARAK MANDAL'S<br></h4>
         <h1>NUTAN COLLEGE OF ENGINEERING & RESEARCH (NCER)<br></h1>
         <h4>Under administrative support of Pimpri Chinchwad Education Trust (PCET)<br></h4>
         <h6>AICTE Approved | Permanently Affiliated to (DBATU ID-6419), Lonere | Approved by Govt. of Maharashtra</h6>
+        <p contenteditable="true">"You Know I Am Editable!!!"</p>
         <h5>ISO 21001:2018 Certified</h5>
     </div>
 
@@ -697,15 +715,15 @@ ul a:hover{
   <div class="images" style="display: flex; gap: 15px;">
       <div class="midimg">
         <img class="pic" src="latest-events-ncer-1.jpg" alt="event pic" title="News & Events">
-        <article><h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quaerat.</h4></article>
+        <article><h4 contenteditable="true">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quaerat.</h4></article>
       </div>
       <div class="midimg">
         <img class="pic" src="latest-events-ncer-2.jpg" alt="event pic" title="News & Events">
-        <article><h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quaerat.</h4></article>
+        <article><h4 contenteditable="true">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quaerat.</h4></article>
       </div>
       <div class="midimg">
         <img class="pic" src="latest-events-ncer-3.jpg" alt="event pic" title="News & Events">
-        <article><h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, omnis?</h4></article>
+        <article><h4 contenteditable="true">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, omnis?</h4></article>
       </div>
     
 
