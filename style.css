@@ -1,0 +1,509 @@
+body {
+    cursor: url('sword.png'), auto;
+}
+
+.container #current-time {
+    background-image: linear-gradient(to bottom right, rgb(0, 183, 255), black, rgb(0, 183, 255));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    font-size: 20px;
+}
+
+#current-time {
+    animation: slideBlink 7s ease-in-out infinite;
+    transform: translateX(-100%);
+}
+
+@keyframes slideBlink {
+
+    0%,
+    100% {
+        opacity: 0;
+        /* Start and end with full opacity */
+        transform: translateX(-100%);
+        /*Slide to the left edge */
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateX(100%);
+        /*Slide to the right edge*/
+    }
+}
+
+.navbar {
+    background-color: silver;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 15px;
+    gap: 30px;
+    font-family: calibre;
+}
+
+.navbar a {
+    display: flex;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+h1 {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+h4 {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h5 {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h6 {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slip {
+    overflow: hidden;
+    background-color: skyblue;
+    padding-left: 70px;
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+
+.slip a {
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+.subnav .subnavbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 14px;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.slip a:hover,.subnav:hover .subnavbtn {
+    background-color: rgb(0, 183, 255);
+}
+
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: skyblue;
+    width: 100%;
+}
+
+.subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+}
+
+.subnav-content a:hover {
+    background-color: 1b547f;
+    color: white;
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.images .pic {
+    height: 200px;
+    width: 200px;
+}
+
+.photos {
+    display: flex;
+}
+
+
+.content h1 {
+    padding-top: 5%;
+}
+
+.content li {
+    /* height: 20vh;
+    width:40vw; */
+    /* float: right; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.content ul {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    padding-top: 3%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+.social {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: fixed;
+    right: 0;
+    /* property helps to place right by taking zero distance from that direction*/
+    filter: drop-shadow(10px 10px 10px black);
+    z-index: 10;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 20px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.fa:hover {
+    opacity: 0.9;
+}
+
+.fa-facebook {
+    background: #566bf8;
+    color: white;
+}
+
+.fa-twitter {
+    background: #7cbef0;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #032e93c0;
+    color: white;
+}
+
+.fa-youtube {
+    background: #fc3a3a;
+    color: white;
+}
+
+.fa-instagram {
+    background: rgb(255, 2, 2);
+    color: white;
+}
+
+.fa-facebook {
+    transition: transform 0.5s;
+}
+
+.fa-facebook:hover {
+    transform: rotate(360deg);
+}
+
+.fa-linkedin {
+    transition: transform 0.5s;
+}
+
+.fa-linkedin:hover {
+    transform: rotate(360deg);
+}
+
+.fa-twitter {
+    transition: transform 0.5s;
+}
+
+.fa-twitter:hover {
+    transform: rotate(360deg);
+}
+
+.fa-instagram {
+    transition: transform 0.5s;
+}
+
+.fa-instagram:hover {
+    transform: rotate(360deg);
+}
+
+.fa-youtube {
+    transition: transform 0.5s;
+}
+
+.fa-youtube:hover {
+    transform: rotate(360deg);
+}
+
+.admissions {
+    background-color: skyblue;
+    padding: 10px;
+}
+
+.blink {
+    animation: blinker 1.5s linear infinite;
+    background-color: #566bf8;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.mainlists {
+    display: flex;
+    flex-direction: row;
+    background-color: #eeeAF1;
+    justify-content: space-evenly;
+}
+
+.submainlist {
+    font-size: 24px;
+    color: #1B547F;
+    padding-top: 20px;
+}
+
+ul a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: #337ab7;
+    font-size: 15px;
+}
+
+ul a:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+
+}
+
+.maincontact {
+    color: whitesmoke;
+    background-color: #1b547f;
+    display: flex;
+    flex-direction: row;
+    font-family: calibri;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 240px;
+}
+
+.contact1 h4, .quicklinks h4, .locationmap h4, .coordinator h4 {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.locationmap {
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+.locationmap:hover {
+    transform: scale(0.9);
+}
+
+.sub2contact1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.sub2contact1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.sub1contact1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.quicklinks a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 15px;
+}
+
+.subquicklinks {
+    font-size: 15px;
+}
+
+.quicklinks a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.locationimg {
+    height: 170px;
+    width: 170px;
+    border-radius: 15%;
+    padding: 5%;
+}
+
+.locationimg h4 {
+    font-size: 24px;
+}
+
+.coordinator h4 {
+    font-size: 24px;
+}
+
+.coordinator article a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.facilities {
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
+    padding: 3%;
+    flex-wrap: wrap;
+}
+
+.facilities img {
+    height: 80px;
+    width: 80px;
+}
+
+.facilities a {
+    text-decoration: none;
+    font-size: 14px;
+    font-family: calibri;
+    display: flex;
+    justify-content: center;
+    padding: 1%;
+    color: rgb(20, 172, 232);
+}
+
+.facilities a:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+}
+
+.subfacilities {
+    padding: 2%;
+    background-color: #fff;
+    border-radius: 30px;
+    filter: drop-shadow(10px 10px 5px black);
+}
+
+.subfacilities:hover {
+    background-image: linear-gradient(to right bottom, violet, indigo, blue, green, yellow, orange, red);
+    filter: drop-shadow(10px 10px 10px black);
+    transform: scale(0.85);
+}
+
+.mainextraactivities {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    padding: 1%;
+    background-color: #fff;
+    flex-wrap: wrap;
+}
+
+.submainactivities h4 {
+    font-size: 25px;
+    color: rgb(22, 22, 162);
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.midimg {
+    box-shadow: 0px 0px 30px lightblue;
+    filter: drop-shadow(0px 0px 10px black);
+    border-radius: 50px;
+}
+
+.midimg img {
+    border-radius: 30px;
+    padding-left: 25px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.midimg article {
+    padding: 3%;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.midimg:hover {
+    transform: scale(0.90);
+    box-shadow: 0px 0px 20px green;
+}
+
+.submainactivities {
+    padding: 1%;
+    filter: drop-shadow(10px 10px 10px black);
+}
+
+.submainactivities:hover {
+    transform: scale(0.95);
+}
