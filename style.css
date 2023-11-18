@@ -1,5 +1,5 @@
 body {
-    cursor: url(sword.png), auto;
+    cursor: url('sword.png'), auto;
 }
 
 .container #current-time {
